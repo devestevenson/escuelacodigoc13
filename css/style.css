@@ -1,0 +1,344 @@
+:root {
+    --azul: #1655B2;
+    --azulClaro: rgba(94, 161, 255, 0.106);
+    --verde: #0DCCAC;
+    --blanco: #FFFFFF;
+    --gris: #707070;
+    --negro: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cocogoose';
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.header__content {
+    width: 100%;
+    height: 1100px;
+    background-color: var(--azulClaro);
+}
+
+.navbar {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo {
+    color: var(--negro);
+    line-height: 1.2rem;
+}
+.navbar__logo span {
+    color: var(--azul);
+}
+.check,
+.checkbtn {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar__box {
+    list-style: none;
+}
+.navbar__list {
+    display: inline-block;
+}
+.navbar__links {
+    display: block;
+    color: var(--gris);
+    margin: 0 1rem;
+    transition: all .3s;
+}
+.navbar__links:hover {
+    color: var(--negro);
+}
+.navbar__login {
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    background-color: var(--azul);
+    border-radius: 30px;
+    transition: all .3s;
+}
+.navbar__login:hover {
+    background-color: var(--verde);
+}
+
+.header__text {
+    margin: 80px 0;
+}
+.header__tittle {
+    text-transform: uppercase;
+    color: var(--negro);
+    font-size: 3.5rem;
+    text-align: center;
+}
+.header__tittle span {
+    color: var(--verde);
+}
+.header__imagen {
+    width: 80%;
+    height: 600px;
+    margin: 80px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.header__imagen img {
+    width: 100%;
+    object-fit: cover;
+}
+.us {
+    width: 80%;
+    height: auto;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.us__tittle {
+    color: var(--negro);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.us__description {
+    max-width: 600px;
+}
+.us__paragraph {
+    color: var(--gris);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.us__paragraph--three {
+    margin-bottom: 60px;
+}
+.us__link {
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    background-color: var(--verde);
+    border-radius: 30px;
+    transition: all .3s;
+}
+.us__link:hover {
+    background-color: var(--azul);
+}
+
+/* ----- CARRERAS ----- */
+.careers {
+    width: 80%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.careers__box {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.careers__tittle {
+    text-transform: uppercase;
+    color: var(--negro);
+    font-size: 2.5rem;
+}
+.careers__box--study {
+    width: 360px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px 10px;
+}
+.careers__frontend {
+    background-image: url(../img/frontend.jpg);
+}
+.careers__backend {
+    background-image: url(../img/backend.jpg);
+}
+.careers__fullstack {
+    background-image: url(../img/fullstack.jpg);
+}
+.careers__frontend:hover,
+.careers__backend:hover,
+.careers__fullstack:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-out;
+}
+
+/* ----- NOTICIAS ----- */
+.news {
+    width: 100%;
+    height: 600px;
+    background-color: var(--azulClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+.news__tittle {
+    color: var(--azul);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.news__gallery {
+    display: flex;
+}
+.news__gallery img {
+    width: 100%;
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.news__paragraph {
+    color: var(--negro);
+    font-size: 1rem;
+    margin: 6px 0px 20px 0px;
+}
+.news__link {
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 8px 20px;
+    background-color: var(--azul);
+    border-radius: 20px;
+    transition: all .3s;
+}
+.news__link:hover {
+    background-color: var(--verde);
+}
+
+
+
+/* ----- ESTILOS PARA LOGIN ------ */
+.login {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+}
+.login__imagen {
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--gris);
+}
+.login__return {
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 3rem;
+    margin-bottom: 120px;
+}
+.login__form {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azulClaro);
+    padding: 0 60px;
+}
+.login__form--fill {
+    display: flex;
+    flex-direction: column;
+}
+.login__tittle--fill {
+    color: var(--azul);
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+input {
+    width: 50%;
+    border-style: none;
+    padding: 1rem 2rem;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+/* ----- Responsive ----- */
+@media (max-width: 900px) {
+    nav a {
+        font-size: .8rem;
+    }
+    .checkbtn {
+        display: block;
+        order: 1;
+    }
+    .navbar__box {
+        position: fixed;
+        top: 110px;
+        right: -100%;
+        width: auto;
+        height: auto;
+        background-color: var(--verde);
+        transition: all .3s ease-out;
+        border-radius: 20px;
+    }
+    .navbar__list {
+        display: block;
+        text-align: center;
+        margin: 20px 50px;
+    }
+    .navbar__links {
+        color: var(--blanco);
+    }
+    .check:checked ~ .navbar__box {
+        right: 0;
+    }
+
+    .header__tittle {
+        font-size: 2.5rem;
+    }
+
+    /* ----- Responsive para US (nosotros) ----- */
+    .us {
+        flex-direction: column;
+    }
+    .us__tittle {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .us__paragraph,
+    .us__description {
+        font-size: .8rem;
+    }
+
+    /* ----- Responsive para careers (carreras) ----- */
+    .careers {
+        flex-direction: column;
+    }
+    .careers__tittle {
+        font-size: 1.7rem;
+    }
+    .careers__box {
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .careers__box--study {
+        width: 300px;
+        height: 280px;
+        background-size: cover;
+    }
+
+    /* ------ responsive noticias ------ */
+    .news__tittle {
+        font-size: 1.5rem;
+    }
+    .news__link {
+        font-size: .8rem;
+    }
+}
